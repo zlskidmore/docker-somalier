@@ -24,7 +24,7 @@ RUN apt-get update -y && apt-get install -y \
     libncurses5-dev \
     libncursesw5-dev \
     liblzma-dev \
-    gunzip
+    gzip
 
 # install nim
 WORKDIR /usr/local/bin
