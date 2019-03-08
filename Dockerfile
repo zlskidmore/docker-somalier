@@ -61,11 +61,11 @@ RUN nim c -d:release -o:/usr/local/bin/somalier --passC:-flto src/somalier
 
 # download some helper files
 WORKDIR /opt
-RUN curl -SL https://github.com/brentp/somalier/files/2866407/sites.hg38.vcf.gz > sites.hg38.vcf.gz
+RUN wget https://github.com/brentp/somalier/files/2866407/sites.hg38.vcf.gz > sites.hg38.vcf.gz
 RUN gunzip sites.hg38.vcf.gz
-RUN curl -SL https://github.com/brentp/somalier/files/2866408/sites.chr.hg38.vcf.gz > sites.chr.hg38.vcf.gz
+RUN wget  https://github.com/brentp/somalier/files/2866408/sites.chr.hg38.vcf.gz > sites.chr.hg38.vcf.gz
 RUN gunzip sites.chr.hg38.vcf.gz
-RUN curl -SL https://github.com/brentp/somalier/files/2774846/sites.vcf.gz > sites.hg37.vcf.gz
+RUN wget https://github.com/brentp/somalier/files/2774846/sites.vcf.gz > sites.hg37.vcf.gz
 RUN gunzip sites.hg37.vcf.gz
 
 # set default command
