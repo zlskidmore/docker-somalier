@@ -66,7 +66,7 @@ RUN gunzip sites.hg38.vcf.gz
 RUN wget https://github.com/brentp/somalier/files/2866408/sites.chr.hg38.vcf.gz
 RUN mv sites.chr.hg38.vcf.gz sites.chr.hg38.vcf
 #RUN gunzip sites.chr.hg38.vcf.gz
-RUN wget https://github.com/brentp/somalier/files/2774846/sites.vcf.gz
+RUN wget -O sites.hg37.vcf.gz https://github.com/brentp/somalier/files/2774846/sites.vcf.gz
 RUN gunzip sites.hg37.vcf.gz
 
 # set default command
