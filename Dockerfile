@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 # set the environment variables
-ENV somalier_version 0.2.1
+ENV somalier_version 0.2.6
 ENV htslib_version 1.9
 ENV nim_version 0.19.4
 
