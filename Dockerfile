@@ -2,9 +2,9 @@
 FROM ubuntu:18.04
 
 # set the environment variables
-ENV somalier_version 0.2.6
-ENV htslib_version 1.9
-ENV nim_version 0.19.4
+ENV somalier_version 0.2.10
+ENV htslib_version 1.10
+ENV nim_version 1.0.2
 
 # run update and install necessary tools from package manager
 RUN apt-get update -y && apt-get install -y \
